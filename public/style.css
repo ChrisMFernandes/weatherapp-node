@@ -32,7 +32,6 @@ fieldset {
   border-image-width: initial;
   border-image-outset: initial;
   border-image-repeat: initial;
-  min-width: -webkit-min-content;
   padding: 30px;
 }
 .ghost-input, p {
@@ -63,6 +62,8 @@ fieldset {
 }
 .ghost-button {
   background-color: #ffa500;
+  font-family: 'Open Sans', Verdana;
+  font-weight: 900;
   border-radius: 15px;
   border:2px solid #ddd;
   padding:10px 30px;
