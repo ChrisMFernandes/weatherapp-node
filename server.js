@@ -21,9 +21,8 @@ app.post('/', function (req, res) {
   request(url, function (err, response, body) {
     if (err){
       res.render('index', {weather: null, error: 'Error, please try again'});
-    } else {
-      let weather = JSON.parse(body);
-      console.log(weather);
+      } else {
+        let weather = JSON.parse(body);
       if (weather.main == undefined) {
         res.render('index', {weather: null, error: 'Error, please try again'});
       } else {
